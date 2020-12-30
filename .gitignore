@@ -36,6 +36,15 @@ build/Release
 node_modules/
 jspm_packages/
 
+# lerna files
+/lerna-debug.log
+
+# Local Netlify folder
+.netlify
+
+# netlify-lambda build output
+functions
+
 # Typescript v1 declaration files
 typings/
 
@@ -53,6 +62,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.*
 
 # gatsby files
 .cache/
@@ -67,3 +77,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# built lambda functions
+functions
+
+.env.*

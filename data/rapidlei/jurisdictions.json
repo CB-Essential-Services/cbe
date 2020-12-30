@@ -1,0 +1,58 @@
+[
+  {
+    "value": "AU",
+    "label": "Australia"
+  },
+  {
+    "value": "AT",
+    "label": "Austria"
+  },
+  {
+    "value": "BE",
+    "label": "Belgium"
+  },
+  {
+    "value": "DK",
+    "label": "Denmark"
+  },
+  {
+    "value": "FI",
+    "label": "Finland"
+  },
+  {
+    "value": "DE",
+    "label": "Germany"
+  },
+  {
+    "value": "GL",
+    "label": "Greenland"
+  },
+  {
+    "value": "LT",
+    "label": "Lithuania"
+  },
+  {
+    "value": "LU",
+    "label": "Luxembourg"
+  },
+  {
+    "value": "NO",
+    "label": "Norway"
+  },
+  {
+    "value": "PL",
+    "label": "Poland"
+  },
+  {
+    "value": "SG",
+    "label": "Singapore"
+  },
+  {
+    "value": "SE",
+    "label": "Sweden"
+  },
+  {
+    "value": "GB",
+    "label": "United Kingdom"
+  }
+]

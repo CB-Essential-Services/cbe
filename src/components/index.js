@@ -19,6 +19,7 @@ import SectionPosts from './SectionPosts';
 import SectionPricing from './SectionPricing';
 import SectionReviews from './SectionReviews';
 import Layout from './Layout';
+import checkout from './checkout'
 
 export {
     Action,
@@ -41,7 +42,8 @@ export {
     SectionPosts,
     SectionPricing,
     SectionReviews,
-    Layout
+    Layout,
+    checkout
 };
 
 export default {
@@ -65,5 +67,6 @@ export default {
     SectionPosts,
     SectionPricing,
     SectionReviews,
-    Layout
+    Layout,
+    checkout
 };
