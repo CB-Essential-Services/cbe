@@ -1,4 +1,4 @@
 [build]
 publish = "public"
-command = "./stackbit-build.sh"
+command = "npm run build"
 functions = "functions"
