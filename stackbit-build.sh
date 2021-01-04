@@ -4,14 +4,20 @@ set -e
 set -o pipefail
 set -v
 
+echo "stackbit-build.sh: start build"
+
+# get the first commit hash and run studio-build.js, it will install and deploy sanity studio only if needed
+# to optimize the build time, studio-build.js runs in background in parallel to site build command
 initialGitHash=$(git rev-list --max-parents=0 HEAD)
 node ./studio-build.js $initialGitHash &
 
-curl -s -X POST https://api.stackbit.com/project/5fdfc368f50fa000165eaccb/webhook/build/pull > /dev/null
+# fetch data from CMS through stackbit-pull
 npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5fdfc368f50fa000165eaccb
-curl -s -X POST https://api.stackbit.com/project/5fdfc368f50fa000165eaccb/webhook/build/ssgbuild > /dev/null
-gatsby build
+
+# build site
+npm run build
+
+# wait for studio-build.js
 wait
 
-curl -s -X POST https://api.stackbit.com/project/5fdfc368f50fa000165eaccb/webhook/build/publish > /dev/null
-echo "Stackbit-build.sh finished build"
+echo "stackbit-build.sh: finished build"
