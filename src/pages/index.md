@@ -14,7 +14,7 @@ sections:
       https://cdn.sanity.io/images/b5vkk6zl/production/b3985c5337862d79bd1bb5955875696654047a97-700x580.png
     image_alt: App preview
     section_id: hero
-    title: This Is A Big Hero Headline
+    title: Check Check
     type: section_hero
   - background: gray
     features:

@@ -1,1 +1,154 @@
-{"base_font":"nunito-sans","footer":{"content":"&copy; Stackbit. All rights reserved. This Jamstack site was created on <a href=\"https://www.stackbit.com\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Get yours <a href=\"https://app.stackbit.com/create?theme=azimuth\" target=\"_blank\" rel=\"noopener\">here</a>.","has_nav":true,"nav_links":[{"label":"Terms of Service","style":"link","type":"action","url":"/terms-of-service"},{"label":"Privacy Policy","style":"link","type":"action","url":"/privacy-policy"}],"sections":[{"content":"Stackbit theme demo","image":"https://cdn.sanity.io/images/b5vkk6zl/production/70eb9067c3582919c8857c7bb9752aac6e4edd5f-162x36.svg","image_alt":"Footer logo","image_url":"/","type":"footer_text"},{"nav_links":[{"label":"About Us","style":"link","type":"action","url":"/about"},{"label":"Blog","style":"link","type":"action","url":"/blog"},{"label":"Sign Up","style":"link","type":"action","url":"/signup"},{"label":"Contact","style":"link","type":"action","url":"/contact"}],"title":"Company","type":"footer_nav"},{"nav_links":[{"has_icon":true,"icon":"twitter","icon_position":"left","label":"Twitter","style":"link","type":"action","url":"https://twitter.com/"},{"has_icon":true,"icon":"linkedin","icon_position":"left","label":"LinkedIn","style":"link","type":"action","url":"https://www.linkedin.com/"},{"has_icon":true,"icon":"github","icon_position":"left","label":"GitHub","style":"link","type":"action","url":"https://github.com/"}],"title":"Community","type":"footer_nav"},{"content":"Stay up to date with our latest developments.","form_fields":[{"default_value":"Enter email address","input_type":"email","is_required":true,"label":"Email","name":"email","type":"form_field"}],"form_id":"contactForm","hide_labels":true,"submit_label":"Subscribe","title":"Subscribe","type":"footer_form"}],"type":"footer"},"header":{"has_nav":true,"logo_img":"https://cdn.sanity.io/images/b5vkk6zl/production/9277affb70219f721968e9c4c813470385427181-162x36.svg","logo_img_alt":"Logo","nav_links":[{"label":"Home","style":"link","type":"action","url":"/"},{"label":"Features","style":"link","type":"action","url":"/features"},{"label":"Pricing","style":"link","type":"action","url":"/pricing"},{"label":"Style Guide","style":"link","type":"action","url":"/style-guide"},{"label":"Sign Up","style":"primary","type":"action","url":"/signup"}],"type":"header"},"palette":"blue","title":"Azimuth"}
+{
+    "base_font": "system-sans",
+    "footer": {
+        "content": "You are weird",
+        "has_nav": true,
+        "nav_links": [
+            {
+                "label": "Terms of Service",
+                "style": "link",
+                "type": "action",
+                "url": "/terms-of-service"
+            },
+            {
+                "label": "Privacy Policy",
+                "style": "link",
+                "type": "action",
+                "url": "/privacy-policy"
+            }
+        ],
+        "sections": [
+            {
+                "content": "Stackbit theme demo",
+                "image": "https://cdn.sanity.io/images/b5vkk6zl/production/70eb9067c3582919c8857c7bb9752aac6e4edd5f-162x36.svg",
+                "image_alt": "Footer logo",
+                "image_url": "/",
+                "type": "footer_text"
+            },
+            {
+                "nav_links": [
+                    {
+                        "label": "About Us",
+                        "style": "link",
+                        "type": "action",
+                        "url": "/about"
+                    },
+                    {
+                        "label": "Blog",
+                        "style": "link",
+                        "type": "action",
+                        "url": "/blog"
+                    },
+                    {
+                        "label": "Sign Up",
+                        "style": "link",
+                        "type": "action",
+                        "url": "/signup"
+                    },
+                    {
+                        "label": "Contact",
+                        "style": "link",
+                        "type": "action",
+                        "url": "/contact"
+                    }
+                ],
+                "title": "Company",
+                "type": "footer_nav"
+            },
+            {
+                "nav_links": [
+                    {
+                        "has_icon": true,
+                        "icon": "twitter",
+                        "icon_position": "left",
+                        "label": "Twitter",
+                        "style": "link",
+                        "type": "action",
+                        "url": "https://twitter.com/"
+                    },
+                    {
+                        "has_icon": true,
+                        "icon": "linkedin",
+                        "icon_position": "left",
+                        "label": "LinkedIn",
+                        "style": "link",
+                        "type": "action",
+                        "url": "https://www.linkedin.com/"
+                    },
+                    {
+                        "has_icon": true,
+                        "icon": "github",
+                        "icon_position": "left",
+                        "label": "GitHub",
+                        "style": "link",
+                        "type": "action",
+                        "url": "https://github.com/"
+                    }
+                ],
+                "title": "Community",
+                "type": "footer_nav"
+            },
+            {
+                "content": "Stay up to date with our latest developments.",
+                "form_fields": [
+                    {
+                        "default_value": "Enter email address",
+                        "input_type": "email",
+                        "is_required": true,
+                        "label": "Email",
+                        "name": "email",
+                        "type": "form_field"
+                    }
+                ],
+                "form_id": "contactForm",
+                "hide_labels": true,
+                "submit_label": "Subscribe",
+                "title": "Subscribe",
+                "type": "footer_form"
+            }
+        ],
+        "type": "footer"
+    },
+    "header": {
+        "has_nav": true,
+        "logo_img": "https://cdn.sanity.io/images/b5vkk6zl/production/9277affb70219f721968e9c4c813470385427181-162x36.svg",
+        "logo_img_alt": "Logo",
+        "nav_links": [
+            {
+                "label": "",
+                "style": "link",
+                "type": "action",
+                "url": "/"
+            },
+            {
+                "label": "Features",
+                "style": "link",
+                "type": "action",
+                "url": "/features"
+            },
+            {
+                "label": "Pricing",
+                "style": "link",
+                "type": "action",
+                "url": "/pricing"
+            },
+            {
+                "label": "Style Guide",
+                "style": "link",
+                "type": "action",
+                "url": "/style-guide"
+            },
+            {
+                "has_icon": false,
+                "icon_position": "left",
+                "label": "Register",
+                "style": "primary",
+                "type": "action",
+                "url": "/signup"
+            }
+        ],
+        "type": "header"
+    },
+    "palette": "blue",
+    "title": "Azimuth"
+}
