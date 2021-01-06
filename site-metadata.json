@@ -115,12 +115,6 @@
         "logo_img_alt": "Logo",
         "nav_links": [
             {
-                "label": "",
-                "style": "link",
-                "type": "action",
-                "url": "/"
-            },
-            {
                 "label": "Features",
                 "style": "link",
                 "type": "action",

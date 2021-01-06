@@ -9,6 +9,8 @@
     "test": "sanity check"
   },
   "dependencies": {
+    "-": "0.0.1",
+    "@babel/plugin-transform-react-jsx-source": "^7.9.0",
     "@sanity/base": "^0.142.0",
     "@sanity/cli": "^0.142.0",
     "@sanity/color-input": "^0.142.0",
@@ -18,10 +20,17 @@
     "@sanity/default-login": "^0.142.0",
     "@sanity/desk-tool": "^0.142.0",
     "@stackbit/stackbit-pull": "^0.4.0",
+    "babel-preset-react": "^6.24.1",
+    "bl": "4.0.3",
     "prop-types": "^15.6",
+    "gatsby-source-sanity": "^6.0.4",
+    "lerna": "^3.20.2",
     "react": "^16.2",
     "react-dom": "^16.2",
-    "sanity-plugin-markdown": "^1.0.1"
+    "sanity-plugin-dashboard-widget-gatsby": "^1.0.9",
+    "sanity-plugin-markdown": "^1.0.1",
+    "save-dev": "0.0.1-security",
+    "unfetch": "^4.1.0"
   },
   "devDependencies": {}
 }
