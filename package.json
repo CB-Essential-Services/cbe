@@ -9,7 +9,7 @@
     "build": "lerna bootstrap && npm run build-stackbit && npm run build-lambda",
     "serve-lambda": "netlify-lambda serve lambda -c ./webpack.functions.js",
     "build-lambda": "netlify-lambda build lambda -c ./webpack.functions.js",
-    "build-stackbit": "stackbit-build.sh",
+    "build-stackbit": "./stackbit-build.sh",
     "serve": "lerna bootstrap && gatsby serve",
     "postinstall": "netlify-lambda install"
   },
