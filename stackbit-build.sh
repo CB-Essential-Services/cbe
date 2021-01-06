@@ -14,7 +14,8 @@ node ./studio-build.js $initialGitHash &
 # fetch data from CMS through stackbit-pull
 npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/5fdfc368f50fa000165eaccb
 
-# wait for studio-build.js
+# build site
+gatsby build
 wait
 
 echo "stackbit-build.sh: finished build"
