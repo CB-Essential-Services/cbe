@@ -21,8 +21,8 @@ const getStripe = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "subscription",
       lineItems: [{ price: "price_1HhgfkAeKYVunD5vT563QMgx", quantity: 1 }],
-      successUrl: `https://cbessential.services/thanks/`,
-      cancelUrl: `https://cbessential.services/404/`,
+      successUrl: `https://cbe-fc368.netlify.app/thanks/`,
+      cancelUrl: `https://cbe-fc368.netlify.app/404/`,
     });
 
     if (error) {
@@ -30,31 +30,18 @@ const getStripe = () => {
     }
   };
 // This function encodes the captured form data in the format that Netlify's backend requires
-const encode = (data) => {
-  const formData = new FormData()
-  Object.keys(data)
-    .map(key => {
-      if (key === 'files') {
-        for (const file of data[key]) {
-          formData.append(key, file, file.name)
-        }
-      } else {
-        formData.append(key, data[key])
-      }
-    })
-  return formData
-}
+function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
 const Checkout = (props) => {
-  const [name, setName, setState] = useState("")
+  const [name, setName] = useState("")
 
   const handleChange = (e) => {
     setName({ ...name, [e.target.name]: e.target.value })
   }
-
-  const handleAttachment = e => {
-    setState({ [e.target.name]: e.target.files[0] });
-  };
 
   const handleSubmit = (event) => {
     // Prevent the default onSubmit behavior
@@ -63,7 +50,7 @@ const Checkout = (props) => {
     // Note that the header will be different for POSTing a file
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "multipart/form-data" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ 
         "form-name": event.target.getAttribute("name"), 
         ...name
@@ -92,17 +79,6 @@ const Checkout = (props) => {
           name="phone"
           type="tel" required
           onChange={handleChange}
-        />
-      </label>     
-       </p> 
-
-       <p className="form-row">
-      <label>
-        File:
-        <input
-          name="attachment"
-          type="file" required
-          onChange={handleAttachment}
         />
       </label>     
        </p> 

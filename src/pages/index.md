@@ -3,18 +3,22 @@ meta_description: The preview of the Azimuth theme
 meta_title: Stackbit Azimuth Theme
 sections:
   - actions:
-      - label: Learn More
+      - has_icon: true
+        icon_position: right
+        label: Apply
         style: primary
         type: action
-        url: /features
+        url: /lei-registration
     content: >-
-      Azimuth is the perfect theme for developers, designers and entrepreneurs
-      who need a sleek, modern SaaS site. 
+      Every organization needs identity. LEIs are the prized diamonds of
+      regulatory compliance. 
+
+      We make it easy to get and maintain one.
     image: >-
       https://cdn.sanity.io/images/b5vkk6zl/production/b3985c5337862d79bd1bb5955875696654047a97-700x580.png
     image_alt: App preview
     section_id: hero
-    title: Check Check
+    title: Official LEI Code Registration Agent
     type: section_hero
   - background: gray
     features:
