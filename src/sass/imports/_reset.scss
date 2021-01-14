@@ -96,6 +96,32 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  -ms-flex-align: center;
+  align-items: center;
+  background: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.88889em;
+  font-weight: bolder;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 0.5em 1.875em;
+  text-decoration: underline overline dotted red;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.75;
+    outline: 0;
+  }
 }
 
 button::-moz-focus-inner,
