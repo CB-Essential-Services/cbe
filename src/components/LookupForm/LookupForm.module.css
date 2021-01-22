@@ -1,0 +1,96 @@
+.form {
+    & select,
+    & textarea,
+    & button {
+      font-family: inherit;
+      padding: 1rem;
+      border: 1px solid var(--color-black, #000);
+      background: white;
+    }
+  
+    & textarea {
+      padding: 1rem;
+    }
+  
+    & select {
+      padding: 0.5rem;
+    }
+  
+    & .field {
+      padding: 0.5rem 0;
+    }
+  
+    & button {
+      font-weight: 600;
+      font-size: inherit;
+      cursor: pointer;
+    }
+  }
+  
+  .emptyDetails {
+    text-align: center;
+    opacity: 0.5;
+    padding: 1rem 0;
+  }
+  
+  .leiRecord {
+    padding: 1rem 0;
+  
+    & h1 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      line-height: 1;
+    }
+  
+    & h2 {
+      margin: 1rem 0;
+      line-height: 1;
+    }
+  
+    & pre {
+      max-width: 100%;
+      overflow: auto;
+    }
+  }
+  
+  .results {
+    margin: 1rem 0;
+    max-height: 200px;
+    overflow-y: auto;
+  
+    & table {
+      border-spacing: 0;
+      width: 100%;
+      margin: 0;
+  
+      & tbody td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+  
+        &:nth-child(2) {
+          max-width: 0;
+          width: 50%;
+        }
+      }
+  
+      & th,
+      & td {
+        padding: 5px;
+      }
+  
+      & thead th {
+        text-align: left;
+      }
+  
+      & tbody tr {
+        &:hover,
+        &:focus {
+          background: rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+  
