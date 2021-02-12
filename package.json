@@ -16,6 +16,8 @@
   "dependencies": {
     "-": "0.0.1",
     "@babel/plugin-transform-react-jsx-source": "^7.9.0",
+    "@mdx-js/mdx": "^1.5.9",
+    "@mdx-js/react": "^1.5.9",
     "@octokit/core": "^3.2.4",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "@stackbit/stackbit-pull": "^0.4.0",
