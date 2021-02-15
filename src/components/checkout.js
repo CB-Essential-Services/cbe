@@ -21,8 +21,8 @@ const getStripe = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "subscription",
       lineItems: [{ price: "price_1HhgfkAeKYVunD5vT563QMgx", quantity: 1 }],
-      successUrl: `https://cbe-fc368.netlify.app/thanks/`,
-      cancelUrl: `https://cbe-fc368.netlify.app/404/`,
+      successUrl: `https://cbes.nyc/thanks/`,
+      cancelUrl: `https://cbes.nyc/`,
     });
 
     if (error) {
